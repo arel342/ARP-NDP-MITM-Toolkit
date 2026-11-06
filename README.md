@@ -321,6 +321,24 @@ python3 -m pip --version
 
 ---
 
+
+
+cek gadeway
+Get-NetRoute -DestinationPrefix "0.0.0.0/0" |
+Select-Object NextHop, InterfaceAlias
+
+contoh 
+NextHop     InterfaceAlias
+-------     --------------
+192.168.1.1 Wi-Fi
+192.168.1.1 Ethernet
+
+
+
+jalankan py
+ python arp_menu.py --iface "Wi-Fi" --gateway YOU-GADEWAY --pcap capture.pcap
+
+
 ## Lisensi dan Disclaimer
 
 Dokumentasi ini disediakan untuk edukasi dan persiapan pengujian keamanan jaringan yang sah. Pastikan Anda memiliki otorisasi sebelum melakukan pengujian. Pengguna bertanggung jawab untuk mematuhi hukum, kebijakan jaringan, dan ketentuan layanan yang berlaku.
