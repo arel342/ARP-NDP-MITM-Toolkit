@@ -329,11 +329,8 @@ Select-Object NextHop, InterfaceAlias
 
 contoh 
 NextHop     InterfaceAlias
--------     --------------
 192.168.1.1 Wi-Fi
 192.168.1.1 Ethernet
-
-
 
 jalankan py
  python arp_menu.py --iface "Wi-Fi" --gateway YOU-GADEWAY --pcap capture.pcap
